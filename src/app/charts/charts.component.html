@@ -1,0 +1,42 @@
+
+<select (change)="handleChange($event.target.selectedIndex)">
+  <option *ngFor="let item of datatable1" [value]="item.label">{{item.label}}</option>
+</select>
+<fusioncharts  type="column2d" width="600" height="500" 
+          dataFormat="json" [dataSource]="dataSource" >
+</fusioncharts>
+<fusioncharts  type="column2d" width="600" height="500" 
+          dataFormat="json" [dataSource]="dataSource1" >
+</fusioncharts>
+<fusioncharts  type="column2d" width="600" height="500" 
+          dataFormat="json" [dataSource]="dataSource2" >
+</fusioncharts>
+
+
+
+<!--<p style="font-size:20px;font-weight: 300;">
+    You're are currently hovering over
+    <u>{{selectedLabel || "______"}}</u> whose value is
+    <u>{{selectedValue || "_______"}} </u>
+  </p>
+  
+
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+  </div>
+  <div ngbDropdown class="d-inline-block">
+    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button ngbDropdownItem>Action - 1</button>
+      <button ngbDropdownItem>Another Action</button>
+      <button ngbDropdownItem>Something else is here</button>
+    </div>
+  </div>-->
+  

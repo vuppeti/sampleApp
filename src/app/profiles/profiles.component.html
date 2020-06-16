@@ -1,0 +1,44 @@
+
+
+<!-- <div *ngFor="let person of persons.data" class="container">
+
+  <div class="row my-5 border">
+    <div class="col-sm-2">
+    <img src="{{person.avatar}}" class="rounded-circle">  
+    </div>
+    <div class="col-sm-4">
+      <p> {{person.first_name}} {{person.last_name}}</p>
+      <p>{{person.id}}</p>
+    </div>
+    <div class="col-sm-4">
+      <button type="button" [routerLink]="['/viewProfile' , person.id]" class="my-5 btn btn-primary">View Details</button>
+    </div>
+    <div class="col-sm-4" offset-sm-4></div>
+  </div>
+</div> -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sl No</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Age</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr  *ngFor="let person of persons.details" class="container">
+        <td>{{person.id}}</td>
+        <td>{{person.name}}</td>
+        <td>{{person.city}}</td>
+        <!--<td>{{person.employee_age}}</td>-->
+        <td>
+          <button type="button" [routerLink]="['/viewProfile' , person.id]" class="mx-4 btn btn-primary">View</button>
+          <button type="button"  [routerLink]="['/update' , person.id]" class="btn btn-success">Update</button>
+          <button type="button"  class="mx-4 btn btn-danger">Delete</button>
+        </td>
+      </tr>
+   </table> 
+  
+    

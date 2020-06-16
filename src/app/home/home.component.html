@@ -1,0 +1,21 @@
+<div class="top-content">
+    <h3>Real Time Search with RxJS</h3>
+    <p>Open the console to see logs</p>
+    <p>API: https://api.cdnjs.com/libraries?search=</p>
+</div>
+<!-- Pass search terms as we type 
+<
+<input
+    class="form-control"
+    (keyup)="searchTerm$.next($event.target.value)"
+    placeholder="Search from https://api.cdnjs.com/libraries?search=<param>"
+/>
+
+<ul class="list-group" *ngIf="results">
+    <li class="list-group-item" *ngFor="let result of data.data | slice: 0:9">
+        <a href="{{ result.latest }}" target="_blank">
+            {{ result.name }}
+        </a>
+    </li>
+</ul>
+-->
